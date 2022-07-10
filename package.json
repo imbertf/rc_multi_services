@@ -1,0 +1,32 @@
+{
+  "name": "rc_multi_services",
+  "version": "1.0.0",
+  "description": "RC Multi-services, Orléans",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imbertf/rc_multi_services.git"
+  },
+  "keywords": [
+    "moneygram",
+    "western",
+    "Union",
+    "transfert",
+    "d'argent",
+    "relais",
+    "pick",
+    "up",
+    "mobiles",
+    "et",
+    "accessoires"
+  ],
+  "author": "imbertf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imbertf/rc_multi_services/issues"
+  },
+  "homepage": "https://github.com/imbertf/rc_multi_services#readme"
+}
