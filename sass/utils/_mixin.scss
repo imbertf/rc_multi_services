@@ -1,6 +1,16 @@
 
 @mixin flex-center {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin border-shadow {
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px $shadow-color;
 }

@@ -1,0 +1,12 @@
+.footer__container {
+    background: $quinary-color;
+    height: 150px;
+    @include flex-center;
+}
+
+.footer__txt {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    @include flex-center;
+}

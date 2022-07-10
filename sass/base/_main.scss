@@ -1,0 +1,8 @@
+.main__container {
+    // border: 1px solid green;
+    height: 300px;
+    margin: 50px 0;
+    @include flex-center;
+    justify-content: space-around;
+    flex-direction: column;
+}

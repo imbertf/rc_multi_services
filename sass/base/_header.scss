@@ -1,4 +1,9 @@
 
+header {
+    height: 150px;
+    @include flex-center;
+}
+
 .header__logo {
     @include flex-center;
     & img {

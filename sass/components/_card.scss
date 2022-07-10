@@ -1,0 +1,9 @@
+
+.card {
+    background: white;
+    @include border-shadow;
+    width: 200px;
+    max-width: 100%;
+    @include flex-center;
+    justify-content: center;
+}
