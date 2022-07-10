@@ -1,16 +1,59 @@
 body {
-  border: 1px solid green;
   background: #E8EBF7;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .header__logo img {
   width: 300px;
   max-width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+.main__container {
+  height: 300px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.footer__container {
+  background: #2D1E2F;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__txt {
+  width: 300px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #95A3DA;
+  width: 200px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
