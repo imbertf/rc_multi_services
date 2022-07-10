@@ -1,9 +1,16 @@
 body {
   border: 1px solid green;
+  background: #E8EBF7;
 }
 
-.header__container {
-  background: #E8EBF7;
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo img {
+  width: 300px;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
