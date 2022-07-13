@@ -1,17 +1,28 @@
 
-header {
-    height: 25%;
-}
+// .header__small {
+//     height: unset;
+// }
 
 .header__container {
-    height: 100%;
     @include flex-center;
 }
 
 .header__logo {
     @include flex-center;
+
     & img {
         width: 300px;
         max-width: 100%;
+    }
+}
+
+.header__background {
+    // border: 1px solid green;
+    height: 200px;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }

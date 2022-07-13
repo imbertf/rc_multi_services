@@ -14,28 +14,34 @@ html, body {
 .container__page {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container__page--small {
+  height: unset;
 }
 
 a {
   text-decoration: none;
   color: #2D1E2F;
+  font-family: "robotoregular";
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   font-family: "robotoregular";
 }
 
 @keyframes btn-fondu {
   100% {
-    background-color: #F2A541;
+    background-color: #7C8BC6;
+    color: white;
   }
 }
-header {
-  height: 25%;
-}
-
 .header__container {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,9 +57,32 @@ header {
   max-width: 100%;
 }
 
+.header__background {
+  height: 200px;
+}
+.header__background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 main {
-  height: 50%;
-  padding: 30px 0;
+  height: 100%;
+}
+
+.main__small {
+  height: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main__small--title {
+  font-size: 20px;
+}
+.main__small--txt {
+  font-size: 15px;
+  text-align: justify;
 }
 
 .main__container {
@@ -65,16 +94,42 @@ main {
   flex-direction: column;
 }
 
+.container__txt {
+  margin: 20px;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.container__txt img {
+  width: 100%;
+}
+
+.nav__bar {
+  bottom: 40px;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background: #2D1E2F;
+  align-items: center;
+}
+.nav__bar a {
+  color: white;
+}
+
 footer {
-  height: 20%;
+  height: 200px;
 }
 
 .footer__container {
   background: #2D1E2F;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
 }
 .footer__container i {
   font-size: 30px;
@@ -119,14 +174,11 @@ footer {
   width: 100%;
   height: 50px;
   border: none;
-  background: #e74040;
+  background: #485896;
 }
 .btn a {
   color: white;
   font-size: 15px;
-}
-.btn__accueil {
-  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

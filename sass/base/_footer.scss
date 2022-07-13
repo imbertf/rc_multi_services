@@ -1,11 +1,14 @@
 footer {
-    height: 20%;
+    height: 200px;
 }
 
 .footer__container {
-    background: $quinary-color;
+    background: #2D1E2F;
     height: 100%;
-    @include flex-center;
+    @include flex-column;
+    justify-content: space-evenly;
+    align-items: center;
+
     & i {
         font-size: 30px;
         color: $primary-color;
@@ -17,6 +20,7 @@ footer {
     color: white;
     font-size: 20px;
     @include flex-center;
+
     & a {
         color: white;
     }

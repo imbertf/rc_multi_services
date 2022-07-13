@@ -1,8 +1,22 @@
-
-
 main {
-    height: 50%;
-    padding: 30px 0;
+    height: 100%;
+}
+
+.main__small {
+    // border: 1px solid green;
+    height: unset;
+    @include flex-column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &--title {
+        font-size: 20px;
+    }
+
+    &--txt {
+        font-size: 15px;
+        text-align: justify;
+    }
 }
 
 .main__container {
@@ -11,4 +25,33 @@ main {
     @include flex-center;
     justify-content: space-around;
     flex-direction: column;
+}
+
+.container__txt {
+    // border: 1px solid green;
+    margin: 20px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.nav__bar {
+    // border: 1px solid green;
+    bottom: 40px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: #2D1E2F;
+    align-items: center;
+
+    & a {
+        color: white;
+    }
 }

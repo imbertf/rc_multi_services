@@ -3,12 +3,9 @@
     width: 100%;
     height: 50px;
     border: none;
-    background: #e74040;
+    background: $btn-color;
     & a{
         color: white;
         font-size: 15px;
-    }
-    &__accueil {
-        box-shadow: none;
     }
 }
