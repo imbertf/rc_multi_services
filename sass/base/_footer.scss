@@ -2,6 +2,10 @@
     background: $quinary-color;
     height: 150px;
     @include flex-center;
+    & i {
+        font-size: 30px;
+        color: $primary-color;
+    }
 }
 
 .footer__txt {
@@ -9,4 +13,7 @@
     color: white;
     font-size: 20px;
     @include flex-center;
+    & a {
+        color: white;
+    }
 }

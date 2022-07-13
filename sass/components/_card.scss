@@ -1,9 +1,24 @@
-
 .card {
     background: white;
     @include border-shadow;
-    width: 200px;
-    max-width: 100%;
     @include flex-center;
     justify-content: center;
+
+    &:hover {
+        animation: btn-fondu 200ms forwards;
+    }
+
+    & p {
+        @include txt-ellipsis;
+    }
+
+    &__link {
+        width: 100%;
+        max-width: 200px;
+
+        &--btn {
+            position: relative;
+            top: 80px;
+        }
+    }
 }

@@ -1,0 +1,14 @@
+
+.btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #e74040;
+    & a{
+        color: white;
+        font-size: 15px;
+    }
+    &__accueil {
+        box-shadow: none;
+    }
+}

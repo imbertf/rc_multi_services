@@ -1,7 +1,29 @@
+@font-face {
+  font-family: "robotoregular";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: #E8EBF7;
+  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #2D1E2F;
+}
+
+p, h1, h2, h3 {
+  font-family: "robotoregular";
+}
+
+@keyframes btn-fondu {
+  100% {
+    background-color: #F2A541;
+  }
+}
 header {
   height: 150px;
   display: flex;
@@ -36,6 +58,10 @@ header {
   align-items: center;
   justify-content: center;
 }
+.footer__container i {
+  font-size: 30px;
+  color: #E8EBF7;
+}
 
 .footer__txt {
   width: 300px;
@@ -45,15 +71,48 @@ header {
   align-items: center;
   justify-content: center;
 }
+.footer__txt a {
+  color: white;
+}
 
 .card {
   background: white;
   border-radius: 20px;
   box-shadow: 5px 5px 15px #95A3DA;
-  width: 200px;
-  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: center;
-}/*# sourceMappingURL=main.css.map */
+}
+.card:hover {
+  animation: btn-fondu 200ms forwards;
+}
+.card p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card__link {
+  width: 100%;
+  max-width: 200px;
+}
+.card__link--btn {
+  position: relative;
+  top: 80px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #e74040;
+}
+.btn a {
+  color: white;
+  font-size: 15px;
+}
+.btn__accueil {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -14,3 +14,9 @@
     border-radius: 20px;
     box-shadow: 5px 5px 15px $shadow-color;
 }
+
+@mixin txt-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,4 +1,14 @@
 body {
     // border: 1px solid green;
     background: $primary-color;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $quinary-color;
+}
+
+p, h1, h2, h3 {
+    font-family: 'robotoregular';
 }
