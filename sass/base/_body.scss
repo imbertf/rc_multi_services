@@ -1,7 +1,13 @@
-body {
+html, body {
     // border: 1px solid green;
     background: $primary-color;
     margin: 0;
+    height: 100%;
+}
+
+.container__page {
+    width: 100%;
+    height: 100%;
 }
 
 a {

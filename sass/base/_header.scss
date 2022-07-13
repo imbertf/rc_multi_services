@@ -1,6 +1,10 @@
 
 header {
-    height: 150px;
+    height: 25%;
+}
+
+.header__container {
+    height: 100%;
     @include flex-center;
 }
 

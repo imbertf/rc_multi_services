@@ -1,6 +1,10 @@
+footer {
+    height: 20%;
+}
+
 .footer__container {
     background: $quinary-color;
-    height: 150px;
+    height: 100%;
     @include flex-center;
     & i {
         font-size: 30px;
