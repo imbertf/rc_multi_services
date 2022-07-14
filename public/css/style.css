@@ -5,6 +5,56 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes btn-fondu {
+  100% {
+    background-color: #7C8BC6;
+    color: white;
+  }
+}
+@-webkit-keyframes card-fondu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes card-fondu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 50px;
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 html, body {
   background: #E8EBF7;
   margin: 0;
@@ -35,12 +85,6 @@ h3 {
   font-family: "robotoregular";
 }
 
-@keyframes btn-fondu {
-  100% {
-    background-color: #7C8BC6;
-    color: white;
-  }
-}
 .header__container {
   display: flex;
   align-items: center;
@@ -59,6 +103,10 @@ h3 {
 
 .header__background {
   height: 200px;
+}
+.header__background--contain img {
+  width: 100%;
+  object-fit: contain;
 }
 .header__background img {
   height: 100%;
@@ -84,6 +132,9 @@ main {
   font-size: 15px;
   text-align: justify;
 }
+.main__small--bg {
+  background: #F3CA40;
+}
 
 .main__container {
   height: 100%;
@@ -95,25 +146,42 @@ main {
 }
 
 .container__txt {
+  opacity: 0;
   margin: 20px;
   width: 50%;
   padding: 10px;
   text-align: center;
+  animation: card-fondu 1s ease-in-out 900ms both;
+  -webkit-animation: card-fondu 1s ease-in-out 900ms both;
 }
 .container__txt img {
   width: 100%;
 }
 
+.container__logo {
+  border: 5px solid #F2A541;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+  animation: slide-right 1s ease-in-out 1.5s both;
+  -webkit-animation: slide-right 1s ease-in-out 1.5s both;
+}
+
 .nav__bar {
+  position: relative;
   bottom: 40px;
   border-radius: 30px 30px 0 0;
-  position: relative;
+  opacity: 0;
   width: 100%;
-  height: 50px;
+  height: 0;
   display: flex;
   justify-content: center;
   background: #2D1E2F;
   align-items: center;
+  animation: slide-up 1s ease-in-out 200ms both;
+  -webkit-animation: slide-up 1s ease-in-out 200ms both;
 }
 .nav__bar a {
   color: white;

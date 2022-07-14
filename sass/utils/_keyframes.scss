@@ -1,6 +1,82 @@
+//   _________________________________________________
+//  |                                                 |
+//  |                    btn                          |         
+//  |_________________________________________________|
+//
+
 @keyframes btn-fondu {
     100% {
         background-color: $btn-hover;
         color: white;
+    }
+}
+
+//   _________________________________________________
+//  |                                                 |
+//  |                    fondu                        |         
+//  |_________________________________________________|
+//
+
+@-webkit-keyframes card-fondu {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+
+    50% {
+        opacity: .5;
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes card-fondu {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+
+    50% {
+        opacity: .5;
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//   _________________________________________________
+//  |                                                 |
+//  |                    slide                        |         
+//  |_________________________________________________|
+//
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 50px;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

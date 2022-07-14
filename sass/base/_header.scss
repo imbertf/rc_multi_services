@@ -19,6 +19,10 @@
 .header__background {
     // border: 1px solid green;
     height: 200px;
+    &--contain img {
+        width: 100%;
+        object-fit: contain;
+    }
 
     & img {
         height: 100%;
