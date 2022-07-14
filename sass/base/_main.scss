@@ -16,10 +16,18 @@ main {
     &--txt {
         font-size: 15px;
         text-align: justify;
+
+        & a {
+            color: $a-color;
+        }
     }
 
     &--bg {
         background: #F3CA40;
+    }
+
+    &--bgblue {
+        background-color: #95A3DA;
     }
 }
 
@@ -74,5 +82,6 @@ main {
 
     & a {
         color: white;
+        font-size: 20px;
     }
 }

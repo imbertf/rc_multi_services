@@ -132,8 +132,14 @@ main {
   font-size: 15px;
   text-align: justify;
 }
+.main__small--txt a {
+  color: #232389;
+}
 .main__small--bg {
   background: #F3CA40;
+}
+.main__small--bgblue {
+  background-color: #95A3DA;
 }
 
 .main__container {
@@ -185,6 +191,7 @@ main {
 }
 .nav__bar a {
   color: white;
+  font-size: 20px;
 }
 
 footer {
